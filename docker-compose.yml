@@ -1,0 +1,13 @@
+version: "3"
+
+
+services:
+
+    test:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        image: pytest_run
+        container_name: "doodles_test"
+        volumes:
+            - .:/doodles_test/
